@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base:'/anant', //(temporary)for deploying on github 
+  base:process.env.VITE_BASE_PATH || "/anant", //(temporary)for deploying on github 
 
   // Optimized for animations and performance
   build: {
